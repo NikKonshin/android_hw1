@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">android_hw1</string>
+<string name="city_moscow">Москва</string>
+<string name="button_moscow">Москва</string>
+<string name="button_perm">Пермь</string>
+<string name="button_petersburg">Санкт-Петербург</string>
+<string name="button_omsk">Омск</string>
+<string name="weather_moscow">+15</string>
+<string name="weather_perm">+11</string>
+<string name="weather_petersburg">+14</string>
+<string name="weather_omsk">+17</string>
+</resources>

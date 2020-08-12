@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">android_hw1</string>
+    <string name="city_moscow">Moscow</string>
+    <string name="button_moscow">Moscow</string>
+    <string name="button_perm">Perm</string>
+    <string name="button_petersburg">St.Petersburg</string>
+    <string name="button_omsk">Omsk</string>
+    <string name="weather_moscow">+15</string>
+    <string name="weather_perm">+11</string>
+    <string name="weather_petersburg">+14</string>
+    <string name="weather_omsk">+17</string>
 </resources>
