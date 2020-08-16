@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">android_hw1</string>
-<string name="city_moscow">Москва</string>
-<string name="button_moscow">Москва</string>
-<string name="button_perm">Пермь</string>
-<string name="button_petersburg">Санкт-Петербург</string>
-<string name="button_omsk">Омск</string>
-<string name="weather_moscow">+15</string>
-<string name="weather_perm">+11</string>
-<string name="weather_petersburg">+14</string>
-<string name="weather_omsk">+17</string>
+    <string name="app_name">android_hw1</string>
+    <string name="city_moscow">Москва</string>
+    <string name="button_moscow">Москва</string>
+    <string name="button_perm">Пермь</string>
+    <string name="button_petersburg">Санкт-Петербург</string>
+    <string name="button_omsk">Омск</string>
+    <string name="weather_moscow">+15</string>
+    <string name="weather_perm">+11</string>
+    <string name="weather_petersburg">+14</string>
+    <string name="weather_omsk">+17</string>
+    <string name="wind_force_moscow">2 м/с</string>
+    <string name="wind_force_perm">1 м/с</string>
+    <string name="wind_force_petersburg">3 м/с</string>
+    <string name="wind_force_omsk">15 м/с</string>
+    <string name="wind_force">Скорость ветра</string>
+    <string name="choose_city">Выбрать город</string>
+    <string name="select_city">Выберите город</string>
+    <string name="settings">Настройки</string>
+    <string name="button_save">Сохранить</string>
+
 </resources>
