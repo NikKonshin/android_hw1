@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainTwoActivity">
 
+
+
     <TextView
         android:id="@+id/sendMsg"
         android:layout_width="match_parent"
