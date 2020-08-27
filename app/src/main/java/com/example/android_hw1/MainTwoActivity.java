@@ -1,7 +1,6 @@
 package com.example.android_hw1;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainTwoActivity extends AppCompatActivity implements Constants {
@@ -30,69 +28,69 @@ public class MainTwoActivity extends AppCompatActivity implements Constants {
         Log.d("LogActivity", instanceState + " - onCreate Activity #2");
 
 
-        final Button buttonMoscow = findViewById(R.id.button_Moscow);
-        final Button buttonPerm = findViewById(R.id.button_Perm);
-        final Button buttonPetersburg = findViewById(R.id.button_StPetersburg);
-        final Button buttonOmsk = findViewById(R.id.button_Omsk);
-        CheckBox checkBoxWindForce = findViewById(R.id.windForce);
-
-        buttonMoscow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Parcel parcel = new Parcel();
-                parcel.city = R.string.button_moscow;
-                parcel.weather = R.string.weather_moscow;
-                Intent intent = new Intent();
-                intent.putExtra(TEXT, parcel);
-                setResult(RESULT_OK,intent);
-                finish();
-
-            }
-        });
-
-        buttonPerm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Parcel parcel = new Parcel();
-                parcel.city = R.string.button_perm;
-                parcel.weather = R.string.weather_perm;
-                Intent intent = new Intent();
-                intent.putExtra(TEXT, parcel);
-                setResult(RESULT_OK,intent);
-                finish();
-            }
-        });
-
-        buttonPetersburg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Parcel parcel = new Parcel();
-                parcel.city = R.string.button_petersburg;
-                parcel.weather = R.string.weather_petersburg;
-                Intent intent = new Intent();
-                intent.putExtra(TEXT, parcel);
-                setResult(RESULT_OK,intent);
-                finish();
-
-            }
-        });
-
-        buttonOmsk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Parcel parcel = new Parcel();
-                parcel.city = R.string.button_omsk;
-                parcel.weather = R.string.weather_omsk;
-                Intent intent = new Intent();
-                intent.putExtra(TEXT, parcel);
-                setResult(RESULT_OK,intent);
-                finish();
-
-            }
-        });
+//        final Button buttonMoscow = findViewById(R.id.button_Moscow);
+//        final Button buttonPerm = findViewById(R.id.button_Perm);
+//        final Button buttonPetersburg = findViewById(R.id.button_StPetersburg);
+//        final Button buttonOmsk = findViewById(R.id.button_Omsk);
+//        CheckBox checkBoxWindForce = findViewById(R.id.windForce);
+//
+//        buttonMoscow.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Parcel parcel = new Parcel();
+//                parcel.cityIndex = R.string.button_moscow;
+//                parcel.weather = R.string.weather_moscow;
+//                Intent intent = new Intent();
+//                intent.putExtra(TEXT, parcel);
+//                setResult(RESULT_OK,intent);
+//                finish();
+//
+//            }
+//        });
+//
+//        buttonPerm.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Parcel parcel = new Parcel();
+//                parcel.cityIndex = R.string.button_perm;
+//                parcel.weather = R.string.weather_perm;
+//                Intent intent = new Intent();
+//                intent.putExtra(TEXT, parcel);
+//                setResult(RESULT_OK,intent);
+//                finish();
+//            }
+//        });
+//
+//        buttonPetersburg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Parcel parcel = new Parcel();
+//                parcel.cityIndex = R.string.button_petersburg;
+//                parcel.weather = R.string.weather_petersburg;
+//                Intent intent = new Intent();
+//                intent.putExtra(TEXT, parcel);
+//                setResult(RESULT_OK,intent);
+//                finish();
+//
+//            }
+//        });
+//
+//        buttonOmsk.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Parcel parcel = new Parcel();
+//                parcel.cityIndex = R.string.button_omsk;
+//                parcel.weather = R.string.weather_omsk;
+//                Intent intent = new Intent();
+//                intent.putExtra(TEXT, parcel);
+//                setResult(RESULT_OK,intent);
+//                finish();
+//
+//            }
+//        });
     }
 
     @Override

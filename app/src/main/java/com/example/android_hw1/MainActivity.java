@@ -31,42 +31,42 @@ public class MainActivity extends AppCompatActivity implements Constants {
         Log.d("LogActivity", instanceState + " - onCreate Activity #1");
 
 
-        Button buttonChooseCity = findViewById(R.id.button_choose_city);
-        Button buttonSettings = findViewById(R.id.button_settings);
-
-
-        buttonSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Экран настроек пока не обрабатывал
-                startActivity(new Intent(getApplicationContext(), MainSettingsActivity.class));
-            }
-        });
-
-        buttonChooseCity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainTwoActivity.class);
-                startActivityForResult(intent, REQUEST_CODE);
-            }
-        });
-
-
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode != REQUEST_CODE) {
-            super.onActivityResult(requestCode, resultCode, data);
-            return;
-        }
-        if (resultCode == RESULT_OK && data != null) {
-            Parcel parcel = (Parcel) data.getExtras().getSerializable(TEXT);
-            TextView cityText = findViewById(R.id.city_text);
-            TextView weatherText = findViewById(R.id.weather_text);
-            cityText.setText(parcel.city);
-            weatherText.setText(parcel.weather);
-        }
+//        Button buttonChooseCity = findViewById(R.id.button_choose_city);
+//        Button buttonSettings = findViewById(R.id.button_settings);
+//
+//
+//        buttonSettings.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Экран настроек пока не обрабатывал
+//                startActivity(new Intent(getApplicationContext(), MainSettingsActivity.class));
+//            }
+//        });
+//
+//        buttonChooseCity.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), MainTwoActivity.class);
+//                startActivityForResult(intent, REQUEST_CODE);
+//            }
+//        });
+//
+//
+//    }
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if (requestCode != REQUEST_CODE) {
+//            super.onActivityResult(requestCode, resultCode, data);
+//            return;
+//        }
+//        if (resultCode == RESULT_OK && data != null) {
+//            Parcel parcel = (Parcel) data.getExtras().getSerializable(TEXT);
+//            TextView cityText = findViewById(R.id.city_text);
+//            TextView weatherText = findViewById(R.id.weather_text);
+//            cityText.setText(parcel.city);
+//            weatherText.setText(parcel.weather);
+//        }
     }
 
     @Override
