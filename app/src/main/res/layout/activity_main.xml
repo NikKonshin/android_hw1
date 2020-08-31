@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/recyclerview_cities"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".MainActivity">
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout
+        android:id="@+id/frame_layout_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <fragment android:name="com.example.android_hw1.CitiesFragment"
-            android:id="@+id/cities"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+<!--        <fragment android:name="com.example.android_hw1.CitiesFragment"-->
+<!--            android:id="@+id/cities"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
     </FrameLayout>
 
 

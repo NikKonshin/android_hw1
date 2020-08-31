@@ -3,6 +3,8 @@ package com.example.android_hw1;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +14,18 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements Constants {
     public static final int REQUEST_CODE = 1;
+//    final CitiesAdapter adapter = new CitiesAdapter();
+//   private final RecyclerView recyclerView = findViewById(R.id.recyclerview_cities);
+
+
+
+    private final Integer[] cities = {R.string.button_moscow, R.string.button_perm,
+                                    R.string.button_omsk,R.string.button_petersburg};
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -29,6 +41,19 @@ public class MainActivity extends AppCompatActivity implements Constants {
         }
         Toast.makeText(getApplicationContext(), instanceState + " - onCreate", Toast.LENGTH_SHORT).show();
         Log.d("LogActivity", instanceState + " - onCreate Activity #1");
+
+        if(savedInstanceState == null){
+            CitiesFragment citiesFragment = new CitiesFragment();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frame_layout_container,citiesFragment)
+                    .commit();
+
+        }
+
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setAdapter(adapter);
+//        updateCities(Arrays.asList(cities));
 
 
 //        Button buttonChooseCity = findViewById(R.id.button_choose_city);
@@ -69,11 +94,19 @@ public class MainActivity extends AppCompatActivity implements Constants {
 //        }
     }
 
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
         Toast.makeText(getApplicationContext(), " onStart", Toast.LENGTH_SHORT).show();
         Log.d("LogActivity", "onStart Activity #1");
+
     }
 
     @Override
